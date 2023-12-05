@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 import ch.zsolv.Athlete;
 import ch.zsolv.Config;
@@ -26,7 +27,8 @@ public class Nds {
     private static Nds instance = null;
     private Nds(){
         // init chrom driver
-        driver = new ChromeDriver();
+        //driver = new ChromeDriver();
+        driver = new FirefoxDriver();
         // go to nds
         driver.get("https://nds.baspo.admin.ch");
     }
